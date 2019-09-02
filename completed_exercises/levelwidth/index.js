@@ -31,3 +31,20 @@ function levelWidth(root) {
 }
 
 module.exports = levelWidth;
+
+/*
+function process(node, i, m) {
+	if (node.children.length === 0) return
+	m[i + 1] = m[i + 1] || 0
+  m[i + 1] += node.children.length
+	node.children.forEach(c => process(c, i + 1, m))
+}
+
+function levelWidth(root) {
+  const m = [1]
+  process(root, 0, m)
+	console.log(m)
+}
+
+module.exports = levelWidth;
+*/
